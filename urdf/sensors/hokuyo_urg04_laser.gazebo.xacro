@@ -1,9 +1,6 @@
 <?xml version="1.0"?>
 
-<robot xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
-       xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller"
-       xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
-       xmlns:xacro="http://ros.org/wiki/xacro">
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
   <xacro:macro name="hokuyo_urg04_laser_gazebo" params="name ros_topic update_rate min_angle max_angle">
     <gazebo reference="${name}_link">
@@ -16,7 +13,7 @@
             <scan>
                 <horizontal>
                     <samples>150</samples>
-                    <resolution>1.0</resolution>    
+                    <resolution>1.0</resolution>
                     <min_angle>${min_angle}</min_angle>
                     <max_angle>${max_angle}</max_angle>
                 </horizontal>

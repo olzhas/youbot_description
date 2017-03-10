@@ -1,8 +1,5 @@
 <?xml version="1.0"?>
-<robot xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
-       xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller"
-       xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
-       xmlns:xacro="http://ros.org/wiki/xacro">
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
 
   <xacro:macro name="youbot_base_gazebo">
@@ -16,7 +13,7 @@
       <kp>1000000</kp>
       <kd>100</kd>
     </gazebo>
-    
+
     <gazebo reference="caster_link_fl">
       <material value="youbot/Orange" />
     </gazebo>
@@ -27,8 +24,8 @@
       <kp>1000000</kp>
       <kd>100</kd>
     </gazebo>
-    
-    <gazebo reference="caster_link_fr">   
+
+    <gazebo reference="caster_link_fr">
       <material value="youbot/Orange" />
     </gazebo>
 
@@ -38,7 +35,7 @@
       <kp>1000000</kp>
       <kd>100</kd>
     </gazebo>
-    
+
     <gazebo reference="caster_link_bl">
       <material value="youbot/Orange" />
     </gazebo>
@@ -49,7 +46,7 @@
       <kp>1000000</kp>
       <kd>100</kd>
     </gazebo>
-    
+
     <gazebo reference="caster_link_br">
       <material value="youbot/Orange" />
     </gazebo>
